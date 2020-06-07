@@ -19,6 +19,10 @@ def assign_rooms(speakers)
   return empty
 end
 
-def printer
-  
+def printer(speakers)
+  batch_badge_creator(speakers).each do |badge|
+    puts badge
+  assign_rooms(speakers).each do |something|
+    puts something
+  end
 end
